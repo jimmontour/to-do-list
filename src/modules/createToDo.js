@@ -1,4 +1,5 @@
-const createToDo = (title, description, dueDate, priority, completed) => {
+const createToDo = (title, dueDate, priority) => {
+    let completed = false;
     return {title, description, dueDate, priority, completed}
 }
 
