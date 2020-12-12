@@ -1,4 +1,14 @@
-import createToDo from'./modules/createToDo'
+import loadPage from './modules/loadPage';
+import createToDoForm from './modules/createToDoForm';
+
+const toDoList = [];
+
+const init = () => {
+    loadPage();
+    createToDoForm();
+}
+
+init();
 
 
-console.log(doTheLaundry)
+console.log('working')

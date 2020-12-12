@@ -1,6 +1,6 @@
 const createToDo = (title, dueDate, priority) => {
     let completed = false;
-    return {title, description, dueDate, priority, completed}
+    return {title, dueDate, priority}
 }
 
 export default createToDo;
