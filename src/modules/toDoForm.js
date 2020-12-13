@@ -1,6 +1,9 @@
 import loadPage from "./loadPage";
 
-const createToDoForm = () => {
+const toDoForm = () => {
+    const addToDoBtn = document.querySelector('.add-to-do');
+    addToDoBtn.remove()
+    
     const content = document.querySelector('.content');
     const toDoForm = document.createElement('div');
     toDoForm.classList.add('to-do-form');
@@ -38,6 +41,16 @@ const createToDoForm = () => {
     cancelToDoBtn.classList.add('cancel-btn')
     cancelToDoBtn.innerText = "Cancel";
     bottomBtnContainer.appendChild(cancelToDoBtn);
+
+    // Event delegation
+    toDoForm.addEventListener('click', e => {
+        if (e.target.className === 'cancel-btn') {
+            toDoForm.remove();
+            loadPage();
+        } else if (e.target.className === 'bottom-create-btn')
+        console.log('create the to do');
+    })
+
 }
 
-export default createToDoForm;
+export default toDoForm

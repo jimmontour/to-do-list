@@ -1,7 +1,5 @@
 import loadPage from './modules/loadPage';
-import createToDoForm from './modules/createToDoForm';
-
-const toDoList = [];
+import toDoForm from './modules/toDoForm';
 
 const init = () => {
     loadPage();
@@ -9,13 +7,6 @@ const init = () => {
 
 init();
 
-// Event handlers
-
-    const addToDoBtn = document.querySelector(".add-to-do");
-    addToDoBtn.addEventListener('click', e => {
-        createToDoForm();
-        addToDoBtn.remove();
-    })
 
 
 
