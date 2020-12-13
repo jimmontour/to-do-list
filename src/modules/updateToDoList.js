@@ -38,7 +38,8 @@ const updateToDoList = () => {
         project.innerText = toDoList[i].project;
         details.appendChild(project);
     }
-    removeToDo();
+
+    removeToDo()
 }
 
 export default updateToDoList
