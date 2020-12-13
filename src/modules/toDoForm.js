@@ -1,5 +1,6 @@
 import createToDo from "./createToDo";
 import loadPage from "./loadPage";
+import updateToDoList from "./upDateToDoList";
 
 const toDoForm = () => {
     const addToDoBtn = document.querySelector('.add-to-do');
@@ -49,8 +50,12 @@ const toDoForm = () => {
             toDoForm.remove();
             loadPage();
         } else if (e.target.className === 'bottom-create-btn') {
-            createToDo();
+            const newTitle = document.querySelector('.to-do-input-title').value;
+            const newDueDate = document.querySelector('.to-do-input-date').value;
+            const newProject = document.querySelector('.to-do-input-project').value;
+            createToDo(newTitle, newDueDate, newProject);
             toDoForm.remove();
+            updateToDoList()
             loadPage();
         }
     })
