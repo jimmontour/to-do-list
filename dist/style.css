@@ -91,11 +91,36 @@ body {
 
 .to-do-input-date, .to-do-input-project {
     color: var(--secondary-accent);
+    background-color: var(--top-bar-font);
     border: 2px grey solid;
     border-radius: 5px;
-    height: 20px;
-    width: 100px;
+    height: 30px;
+    width: 400px;
     text-align: center;
     text-justify: center;
     margin: 10px 25px 5px 20px;
+    vertical-align: middle;
+}
+
+.bottom-btn-container {
+    display: flex;
+}
+
+.bottom-create-btn {
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: var(--secondary-accent);
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--top-bar-font);
+    border-radius: 10px;
+}
+
+.cancel-btn {
+    margin-top:  30px;
+    margin-left: 20px;
+    color: var(--primary-accent);
+    
 }

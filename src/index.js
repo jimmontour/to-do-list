@@ -15,5 +15,9 @@ init();
     addToDoBtn.addEventListener('click', e => {
         createToDoForm();
         addToDoBtn.remove();
-        console.log('clicked');
     })
+
+
+
+
+
