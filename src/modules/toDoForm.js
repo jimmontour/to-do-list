@@ -1,3 +1,4 @@
+import createToDo from "./createToDo";
 import loadPage from "./loadPage";
 
 const toDoForm = () => {
@@ -47,10 +48,12 @@ const toDoForm = () => {
         if (e.target.className === 'cancel-btn') {
             toDoForm.remove();
             loadPage();
-        } else if (e.target.className === 'bottom-create-btn')
-        console.log('create the to do');
+        } else if (e.target.className === 'bottom-create-btn') {
+            createToDo();
+            toDoForm.remove();
+            loadPage();
+        }
     })
-
 }
 
 export default toDoForm
