@@ -22,6 +22,7 @@ const toDoForm = () => {
     const inputDate = document.createElement('input');
     inputDate.setAttribute('placeholder', 'Due Date ')
     inputDate.classList.add('to-do-input-date');
+    inputDate.setAttribute('type', 'date')
     inputSecondary.appendChild(inputDate);
 
     const inputProject = document.createElement('input');
